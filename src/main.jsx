@@ -9,6 +9,7 @@ import EctcsPages from "./pages/EctcsPages.jsx";
 import EcesiAboutPages from "./pages/EcesiAboutPages.jsx";
 import EcesshAboutPages from "./pages/EcesshAboutPages.jsx";
 import EctcsAboutPages from "./pages/EctcsAboutPages.jsx";
+import EcesiRegistrationPages from "./pages/EcesiRegistrationPages.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "ecesi",
     element: <EcesiPages />,
+  },
+  {
+    path: "ecesi/registration",
+    element: <EcesiRegistrationPages />,
   },
   {
     path: "ecesi/about",

@@ -1,16 +1,21 @@
 import BaseButton from "../../atoms/Button/index.jsx";
 import ButtonToS from "../../molecules/ButtonToS/index.jsx";
+import BaseTypography from "../../atoms/Typography/index.jsx";
 
-const PriceForm = () => {
+const PriceForm = (props) => {
+  const { currency, price } = props;
+
   return (
     <>
-      <section id="price">
-        <h1 className="text-black text-xl font-semibold text-start mb-3">
-          Price
-        </h1>
-
+      <section className="w-full">
+        <div className="mb-10">
+          <BaseTypography variant="h2" label="USD 250" />
+        </div>
         <div className="flex flex-col">
-          <ButtonToS /> <BaseButton color="green">pay</BaseButton>
+          <div className="mb-3">
+            <ButtonToS />
+          </div>
+          <BaseButton color="green" label="pay" />
         </div>
       </section>
     </>

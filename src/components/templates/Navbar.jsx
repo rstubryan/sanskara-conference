@@ -13,12 +13,12 @@ const NavList = () => {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
           Call for Paper
         </a>
@@ -26,79 +26,79 @@ const NavList = () => {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          paper submission
+          Paper Submission
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          important dates
+          Important Dates
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          registration
+          Registration
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          speakers
+          Speakers
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          committees
+          Committees
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="black"
         className="p-1 font-medium"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center transition-colors hover:text-green-500"
         >
-          about
+          About
         </a>
       </Typography>
     </ul>

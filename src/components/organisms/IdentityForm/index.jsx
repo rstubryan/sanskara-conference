@@ -3,12 +3,8 @@ import BaseInput from "../../atoms/Input/index.jsx";
 const IdentityForm = () => {
   return (
     <>
-      <section id="form-identity">
-        <h1 className="text-black text-xl font-semibold text-start mb-3">
-          Identity
-        </h1>
-
-        <div className="space-y-3">
+      <section>
+        <div className="space-y-6">
           <BaseInput name="name" type="name" label="Name" />
           <BaseInput name="email" type="email" label="Email" />
           <BaseInput name="phone" type="text" label="Phone" />

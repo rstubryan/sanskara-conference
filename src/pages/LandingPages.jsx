@@ -5,6 +5,8 @@ import PriceForm from "../components/organisms/PriceForm/index.jsx";
 import CountdownConference from "../components/organisms/CountdownConference/index.jsx";
 import RundownConference from "../components/organisms/RundownConference/index.jsx";
 import BaseTypography from "../components/atoms/Typography/index.jsx";
+import HeadingText from "../components/molecules/HeadingText/index.jsx";
+import SubheadingText from "../components/molecules/SubheadingText/index.jsx";
 
 const LandingPages = () => {
   return (
@@ -13,6 +15,9 @@ const LandingPages = () => {
         <h1 className="text-black text-3xl text-center font-bold">
           Documentation (Usages)
         </h1>
+
+        <HeadingText label="Registration" />
+        <SubheadingText label="Identity" />
 
         <BaseTypography
           variant="h1"

@@ -3,16 +3,21 @@ import { Typography } from "@material-tailwind/react";
 const BasePlaceholderToS = () => {
   return (
     <>
-      <Typography color="black" className="flex font-medium text-gray-500">
-        Saya menyetujui
+      <Typography
+        color="black"
+        className="flex font-medium text-gray-500"
+        variant="small"
+      >
+        Saya menyetujui&nbsp;
         <Typography
           as="a"
           href="https://google.com"
           target="_blank"
           color="gray"
-          className="font-semibold transition-colors text-gray-500 hover:text-gray-700"
+          variant="small"
+          className="font-semibold text-gray-500 transition-colors hover:text-gray-700"
         >
-          &nbsp;Syarat dan Ketentuan dan Kebijakan Privasi&nbsp;
+          Syarat dan Ketentuan dan Kebijakan Privasi&nbsp;
         </Typography>
         yang berlaku.
       </Typography>

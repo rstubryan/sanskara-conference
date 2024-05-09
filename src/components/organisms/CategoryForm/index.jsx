@@ -3,12 +3,8 @@ import BaseSelect from "../../atoms/Select/index.jsx";
 const CategoryForm = () => {
   return (
     <>
-      <section id="category">
-        <h1 className="text-black text-xl font-semibold text-start mb-3">
-          Category
-        </h1>
-
-        <div className="space-y-3">
+      <section className="w-full">
+        <div className="space-y-6">
           <BaseSelect
             label="Indonesia / International"
             options={["Indonesia", "International"]}
