@@ -1,14 +1,13 @@
 import { Button } from "@material-tailwind/react";
 
-const BaseButton = (props) => {
-  const {
-    color = "green",
-    size,
-    variant = "filled",
-    label,
-    onClick,
-    className,
-  } = props;
+const BaseButton = ({
+  color = "green",
+  size,
+  variant = "filled",
+  label,
+  onClick,
+  className,
+}) => {
   return (
     <>
       <Button

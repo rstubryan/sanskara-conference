@@ -1,12 +1,10 @@
 import BaseTypography from "../../atoms/Typography/index.jsx";
 
-const SubheadingText = (props) => {
-  const { label, color = "green", className } = props;
-
+const SubheadingText = ({ variant = "h4", label, color = "green" }) => {
   return (
     <>
       <BaseTypography
-        variant="h4"
+        variant={variant}
         color={color}
         label={label}
         className="text-xl lg:text-2xl"

@@ -1,8 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 
-const BaseTypography = (props) => {
-  const { variant, color, label, className } = props;
-
+const BaseTypography = ({ variant, color, label, className }) => {
   return (
     <>
       <Typography variant={variant} color={color} className={className}>

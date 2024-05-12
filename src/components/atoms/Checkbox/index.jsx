@@ -1,10 +1,11 @@
 import { Checkbox } from "@material-tailwind/react";
 import BaseTypography from "../Typography/index.jsx";
 
-const BaseCheckbox = () => {
+const BaseCheckbox = ({ color = "green" }) => {
   return (
     <>
       <Checkbox
+        color={color}
         label={
           <>
             <BaseTypography

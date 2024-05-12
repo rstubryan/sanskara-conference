@@ -1,6 +1,4 @@
-const BaseList = (props) => {
-  const { label } = props;
-
+const BaseList = ({ label }) => {
   return (
     <>
       <ul className="my-3">

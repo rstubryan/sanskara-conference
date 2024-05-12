@@ -1,7 +1,6 @@
 import BaseTypography from "../../atoms/Typography/index.jsx";
 
-const RundownCounter = (props) => {
-  const { location, nation, dd, month, yyyy } = props;
+const RundownCounter = ({ location, nation, dd, month, yyyy }) => {
   return (
     <>
       <section>
@@ -27,7 +26,7 @@ const RundownCounter = (props) => {
             <BaseTypography
               variant="h4"
               color="white"
-              className="text-base font-normal font-normal leading-tight lg:text-2xl"
+              className="text-base font-normal leading-tight lg:text-2xl"
               label={<>{yyyy}</>}
             />
           </div>

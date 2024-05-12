@@ -2,9 +2,7 @@ import BaseButton from "../../atoms/Button/index.jsx";
 import BaseTypography from "../../atoms/Typography/index.jsx";
 import Checkbox from "../../atoms/Checkbox/index.jsx";
 
-const PriceForm = (props) => {
-  const { currency, price } = props;
-
+const PriceForm = ({ currency, price }) => {
   return (
     <>
       <section className="w-full">
