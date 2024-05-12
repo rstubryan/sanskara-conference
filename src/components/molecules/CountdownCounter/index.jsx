@@ -1,8 +1,6 @@
-import PlaceholderCountdown from "../../atoms/PlaceholderCountdown/index.jsx";
+import PlaceholderCountdown from "../PlaceholderCountdown/index.jsx";
 
-const CountdownCounter = (props) => {
-  const { dd, hh, mm, ss } = props;
-
+const CountdownCounter = ({ dd, hh, mm, ss }) => {
   return (
     <>
       <PlaceholderCountdown number={dd} label="days" />
