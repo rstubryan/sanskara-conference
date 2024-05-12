@@ -1,45 +1,126 @@
-import IdentityForm from "../organisms/IdentityForm/index.jsx";
-import CategoryForm from "../organisms/CategoryForm/index.jsx";
-import PriceForm from "../organisms/PriceForm/index.jsx";
+import HeadingText from "../molecules/HeadingText/index.jsx";
 import SubheadingText from "../molecules/SubheadingText/index.jsx";
+import BaseTypography from "../atoms/Typography/index.jsx";
+import BaseButton from "../atoms/Button/index.jsx";
+import ContainerLayout from "./ContainerLayout.jsx";
 
-const RegistrationLayout = () => {
+const RegistrationLayout = ({ color = "green" }) => {
   return (
     <>
-      <div className="">
-        <div className="mb-5">
-          <CardLayout>
-            <div className="mb-5">
-              <SubheadingText label="Identity" />
+      <ContainerLayout>
+        <div className="text-center">
+          <HeadingText color={color} label="Registration" />
+          <section>
+            <div className="my-10 ">
+              <SubheadingText color="black" label="Indonesia" />
             </div>
-            <IdentityForm />
-          </CardLayout>
+            <LocalPriceListCard color={color} />
+          </section>
+          <section>
+            <div className="my-10">
+              <SubheadingText color="black" label="International" />
+            </div>
+            <InterPriceListCard color={color} />
+          </section>
         </div>
-        <div className="space-y-5 sm:space-x-0 sm:space-y-5 md:block lg:flex lg:space-x-5 lg:space-y-0">
-          <CardLayout>
-            <div className="mb-5">
-              <SubheadingText label="Category" />
+      </ContainerLayout>
+    </>
+  );
+};
+
+const localPriceList = [
+  {
+    id: "1",
+    as: "PRESENTER",
+    price: "IDR3.000.000",
+    location: "onsite & online",
+  },
+  {
+    id: "2",
+    as: "AUDIENCE",
+    price: "IDR1.000.000",
+    location: "onsite",
+  },
+  {
+    id: "3",
+    as: "AUDIENCE",
+    price: "IDR100.000",
+    location: "online",
+  },
+];
+
+const internationalPriceList = [
+  {
+    id: "1",
+    as: "PRESENTER",
+    price: "USD 250",
+    location: "onsite & online",
+  },
+  {
+    id: "2",
+    as: "AUDIENCE",
+    price: "USD 75",
+    location: "onsite",
+  },
+];
+
+const LocalPriceListCard = ({ color }) => {
+  return (
+    <>
+      <div className="grid gap-6 lg:grid-cols-3">
+        {localPriceList.map((price) => (
+          <div
+            key={price.id}
+            className="rounded-2xl p-10 text-center shadow-md"
+          >
+            <SubheadingText color={color} label={price.as} />
+            <div className="mb-3 mt-7">
+              <SubheadingText color="black" label={price.price} />
             </div>
-            <CategoryForm />
-          </CardLayout>
-          <CardLayout>
-            <div className="mb-5">
-              <SubheadingText label="Price" />
+            <div className="mb-7">
+              <BaseTypography
+                color="gray"
+                label={price.location}
+                className="text-opacity-60"
+              />
             </div>
-            <PriceForm />
-          </CardLayout>
-        </div>
+            <div className="">
+              <BaseButton color={color} label="pay" />
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
 };
 
-const CardLayout = (props) => {
-  const { children } = props;
+const InterPriceListCard = ({ color }) => {
   return (
     <>
-      <div className="w-full rounded-2xl border-2 p-5 sm:p-5 lg:p-10">
-        {children}
+      <div className="mx-auto max-w-xl">
+        <div className="grid gap-6 lg:grid-cols-2">
+          {internationalPriceList.map((price) => (
+            <div
+              key={price.id}
+              className="rounded-2xl p-10 text-center shadow-md"
+            >
+              <SubheadingText color={color} label={price.as} />
+              <div className="mb-3 mt-7">
+                <SubheadingText color="black" label={price.price} />
+              </div>
+              <div className="mb-7">
+                <BaseTypography
+                  color="gray"
+                  label={price.location}
+                  className="text-opacity-60"
+                />
+              </div>
+              <div className="">
+                <BaseButton color={color} label="pay" />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
