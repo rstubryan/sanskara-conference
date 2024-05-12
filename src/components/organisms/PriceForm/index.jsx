@@ -2,7 +2,7 @@ import BaseButton from "../../atoms/Button/index.jsx";
 import BaseTypography from "../../atoms/Typography/index.jsx";
 import Checkbox from "../../atoms/Checkbox/index.jsx";
 
-const PriceForm = ({ currency, price }) => {
+const PriceForm = ({ color, currency, price }) => {
   return (
     <>
       <section className="w-full">
@@ -11,9 +11,9 @@ const PriceForm = ({ currency, price }) => {
         </div>
         <div className="flex flex-col">
           <div className="mb-3">
-            <Checkbox />
+            <Checkbox color={color} />
           </div>
-          <BaseButton color="green" label="pay" />
+          <BaseButton color={color} label="pay" />
         </div>
       </section>
     </>
