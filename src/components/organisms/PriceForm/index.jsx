@@ -1,6 +1,6 @@
 import BaseButton from "../../atoms/Button/index.jsx";
-import ButtonToS from "../../molecules/ButtonToS/index.jsx";
 import BaseTypography from "../../atoms/Typography/index.jsx";
+import Checkbox from "../../atoms/Checkbox/index.jsx";
 
 const PriceForm = (props) => {
   const { currency, price } = props;
@@ -13,7 +13,7 @@ const PriceForm = (props) => {
         </div>
         <div className="flex flex-col">
           <div className="mb-3">
-            <ButtonToS />
+            <Checkbox />
           </div>
           <BaseButton color="green" label="pay" />
         </div>
