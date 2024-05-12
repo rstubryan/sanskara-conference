@@ -39,7 +39,7 @@ const DayEvent = ({ dd, variant = "h1", color = "white" }) => {
       variant={variant}
       color={color}
       label={dd}
-      className="font-normal lg:text-7xl lg:font-semibold"
+      className="text-base font-normal lg:text-7xl lg:font-semibold"
     />
   );
 };
