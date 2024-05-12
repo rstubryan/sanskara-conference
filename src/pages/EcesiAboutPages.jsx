@@ -5,17 +5,17 @@ import ContainerLayout from "../components/templates/ContainerLayout.jsx";
 import Footer from "../components/templates/Footer.jsx";
 import HeadingText from "../components/molecules/HeadingText/index.jsx";
 
-const ecesiAboutPages = () => {
+const ecesiAboutPages = ({ color = "green" }) => {
   return (
     <>
       <header>
-        <Header />
+        <Header color={color} />
         <NavbarSimple />
       </header>
       <main>
         <ContainerLayout>
           <div className="my-10 text-center">
-            <HeadingText label="About" />
+            <HeadingText color={color} label="About" />
           </div>
           <div className="mb-10">
             <AboutLayout />
@@ -23,7 +23,7 @@ const ecesiAboutPages = () => {
         </ContainerLayout>
       </main>
       <footer>
-        <Footer />
+        <Footer color={color} />
       </footer>
     </>
   );
