@@ -1,15 +1,15 @@
 import BaseTypography from "../../atoms/Typography/index.jsx";
 
 const HeadingText = (props) => {
-  const { label } = props;
+  const { color = "green", label } = props;
 
   return (
     <>
       <BaseTypography
         variant="h2"
-        color="green"
+        color={color}
         label={label}
-        className="uppercase"
+        className="text-2xl uppercase lg:text-4xl"
       />
     </>
   );

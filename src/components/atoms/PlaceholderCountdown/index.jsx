@@ -1,16 +1,21 @@
 import BaseTypography from "../Typography/index.jsx";
 
 const PlaceholderCountdown = (props) => {
-  const { number, label } = props;
+  const { variant = "h3", number, label } = props;
   return (
     <>
       <div className="text-center">
-        <BaseTypography variant="h3" label={number} />
         <BaseTypography
-          variant="paragraph"
-          color="black"
+          variant={variant}
+          color="white"
+          label={number}
+          className="text-2xl lg:text-6xl"
+        />
+        <BaseTypography
+          variant="h4"
+          color="white"
           label={label}
-          component="div"
+          className="text-base font-light lg:text-2xl"
         />
       </div>
     </>

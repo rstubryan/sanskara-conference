@@ -5,20 +5,30 @@ const RundownCounter = (props) => {
   return (
     <>
       <section>
-        <BaseTypography variant="paragraph" label={location + ", " + nation} />
-        <article className="flex justify-between">
-          <BaseTypography label={dd} className="text-6xl" />
-          <div className="flex items-center">
+        <BaseTypography
+          variant="h5"
+          color="white"
+          label={location + ", " + nation}
+          className="text-base font-normal lg:text-xl"
+        />
+        <article className="flex items-center justify-center lg:justify-between">
+          <BaseTypography
+            color="white"
+            label={dd}
+            className="font-normal lg:text-7xl lg:font-semibold"
+          />
+          <div className="flex items-center justify-center lg:flex-col">
             <BaseTypography
-              variant="paragraph"
-              className="leading-tight"
-              label={
-                <>
-                  {month}
-                  <br />
-                  {yyyy}
-                </>
-              }
+              variant="h4"
+              color="white"
+              className="text-base font-normal leading-tight lg:text-2xl"
+              label={<>&nbsp;{month}&nbsp;</>}
+            />
+            <BaseTypography
+              variant="h4"
+              color="white"
+              className="text-base font-normal font-normal leading-tight lg:text-2xl"
+              label={<>{yyyy}</>}
             />
           </div>
         </article>
